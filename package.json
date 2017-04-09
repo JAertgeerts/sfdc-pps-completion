@@ -1,0 +1,28 @@
+{
+  "name": "sfdc-pps-completion",
+  "version": "1.0.0",
+  "description": "Profile & Permission Set user permission completion",
+  "keyword": [
+    "salesforce",
+    "profile",
+    "permissionset",
+    "completion",
+    "userpermission",
+    "cli"
+  ],
+  "main": "index.js",
+  "bin": {
+    "spc": "./bin/cli"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/scolladon/sfdc-pps-completion.git"
+  },
+  "author": "Sébastien Colladon <scolladon@salesforce.com>",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.9.0",
+    "extendify": "^1.0.0",
+    "xml2js": "^0.4.17"
+  }
+}
