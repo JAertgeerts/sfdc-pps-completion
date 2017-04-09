@@ -18,7 +18,7 @@
     "type": "git",
     "url": "https://github.com/scolladon/sfdc-pps-completion.git"
   },
-  "author": "Sébastien Colladon <scolladon@salesforce.com>",
+  "author": "Sébastien Colladon <colladonsebastien@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "commander": "^2.9.0",
