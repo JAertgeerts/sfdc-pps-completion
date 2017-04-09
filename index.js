@@ -88,12 +88,13 @@ module.exports = (config,logger) => {
             // put the json back to xml and write it
             let builder = new xml2js.Builder({'xmldec': { 'version': '1.0', 'encoding': 'UTF-8'}});
             fs.writeFileSync(config.src + permission.name,builder.buildObject(permission.content));
+            logger(permission.name + ' Complete');
             return permission;
           });
         }
       })) 
     }).then(permissions => {
-      logger('Completion complete for ' + permissions);
+      logger('Completion all achieved');
       resolve(); // we are done
     }).catch(err =>
       reject(new Error(err))
